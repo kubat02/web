@@ -38,6 +38,10 @@ main {
   padding: 10px;
   max-height: 400px;
   overflow-y: auto;
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  width: 250px;
 }
 
 .sidebar ul li a {
