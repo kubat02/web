@@ -1,6 +1,6 @@
 ---
 layout: default
-title: KUBAT BAYRIBEY BLOG
+title: Ana Sayfa
 ---
 
 <h1>KUBAT BAYRIBEY BLOG</h1>
@@ -18,7 +18,7 @@ title: KUBAT BAYRIBEY BLOG
         <ul>
             {% assign sorted_pages = site.pages | sort: "date" | reverse %}
             {% for page in sorted_pages %}
-                {% if page.title and page.url contains '/pages/' %}
+                {% if page.title and page.url contains site.baseurl %}
                     <li><a href="{{ site.baseurl }}{{ page.url }}" style="color: #00bfff;">{{ page.title }}</a></li>
                 {% endif %}
             {% endfor %}
