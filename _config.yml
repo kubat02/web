@@ -17,3 +17,6 @@ exclude:
   - assets
   - _includes
   - _layouts
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
