@@ -1,7 +1,7 @@
 title: My GitHub Pages Project
 description: A modern website that allows easy addition of pages with consistent formatting.
 baseurl: ""
-url: "https://yourusername.github.io/my-github-pages-project"
+url: "https://kubat02.github.io/web"
 theme: minima
 markdown: kramdown
 plugins:
