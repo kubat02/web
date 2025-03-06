@@ -19,7 +19,7 @@ title: Ana Sayfa
             {% assign sorted_pages = site.pages | sort: "date" | reverse %}
             {% for page in sorted_pages %}
                 {% if page.title and page.url contains site.baseurl %}
-                    <li><a href="{{ site.baseurl }}{{ page.url }}" style="color: #00bfff;">{{ page.title }}</a></li>
+                    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
