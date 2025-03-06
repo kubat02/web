@@ -1,0 +1,19 @@
+title: My GitHub Pages Project
+description: A modern website that allows easy addition of pages with consistent formatting.
+baseurl: ""
+url: "https://yourusername.github.io/my-github-pages-project"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - _posts
+  - _sass
+  - assets
+  - _includes
+  - _layouts
+  - index.html
+  - _config.yml
