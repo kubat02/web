@@ -1,5 +1,5 @@
 title: KUBAT BAYRIBEY
-description: {{ site.year }} Your Name. All rights reserved.</p>
+description: "Kubat Bayrıbey'in kişisel blogu. Tüm hakları saklıdır."
 baseurl: "/web"  # Eğer kökte çalıştıracaksan bunu boş bırak: baseurl: ""
 url: "https://kubat02.github.io"
 theme: minima
@@ -8,6 +8,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate # Sayfalama için
+  - jemoji # Emoji desteği için
 exclude:
   - README.md
   - _posts
@@ -15,3 +17,6 @@ exclude:
   - assets
   - _includes
   - _layouts
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
