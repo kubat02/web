@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: black;
+  color: white;
 }
 
 header {
@@ -32,8 +34,17 @@ main {
 }
 
 .sidebar {
-  background-color: #f3f3f3;
+  background-color: #222;
   padding: 10px;
   max-height: 400px;
   overflow-y: auto;
+}
+
+.sidebar ul li a {
+  color: #00bfff; /* Mavi linkler */
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
 }
