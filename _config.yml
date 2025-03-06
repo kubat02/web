@@ -1,6 +1,6 @@
 title: My GitHub Pages Blog
 description: A blog system with auto-updating sidebar for GitHub Pages.
-baseurl: "/blog"  # Eğer kökte çalıştıracaksan bunu boş bırak: baseurl: ""
+baseurl: "/web"  # Eğer kökte çalıştıracaksan bunu boş bırak: baseurl: ""
 url: "https://kubat02.github.io"
 theme: minima
 markdown: kramdown
