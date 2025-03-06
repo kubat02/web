@@ -14,12 +14,12 @@ title: Ana Sayfa
 
     <!-- Sağ Sidebar (Sayfalar Listesi) -->
     <div style="flex: 1; padding: 10px; background-color: #f3f3f3; max-height: 400px; overflow-y: auto;">
-        <h3>📌 Son Eklenen Sayfalar</h3>
+        <h3>📌 Son Eklenen Sayfalar ({{ site.pages | size }})</h3>
         <ul>
             {% assign sorted_pages = site.pages | sort: "date" | reverse %}
             {% for page in sorted_pages %}
-                {% if page.title and page.url contains '/pages/' %}
-                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% if page.title and page.dir contains '/pages/' %}
+                    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
