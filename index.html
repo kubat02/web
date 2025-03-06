@@ -13,13 +13,13 @@ title: Ana Sayfa
     </div>
 
     <!-- Sağ Sidebar (Sayfalar Listesi) -->
-    <div style="flex: 1; padding: 10px; background-color: #222; color: white; max-height: 400px; overflow-y: auto;">
+    <div style="flex: 1; padding: 10px; background-color: #f3f3f3; max-height: 400px; overflow-y: auto;">
         <h3>📌 Son Eklenen Sayfalar</h3>
         <ul>
             {% assign sorted_pages = site.pages | sort: "date" | reverse %}
             {% for page in sorted_pages %}
-                {% if page.title and page.url contains site.baseurl %}
-                    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+                {% if page.title and page.url contains '/pages/' %}
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
